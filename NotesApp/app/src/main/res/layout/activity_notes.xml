@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotesActivity"
+    android:background="@color/lightYellow">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+            <include layout="@layout/layout_note_toolbar" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.abdelrahmman.notesapp.LinedEditText
+        android:id="@+id/note_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="23sp"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:gravity="top"
+        android:background="@null"
+        android:imeOptions="flagNoExtractUi"/>
+
+</LinearLayout>
